@@ -1,0 +1,58 @@
+[
+    {
+        "id": "R1",
+        "conditions": [
+            "G02",
+            "G03"
+        ],
+        "conclusion": "K01"
+    },
+    {
+        "id": "R2",
+        "conditions": [
+            "G04"
+        ],
+        "conclusion": "K05"
+    },
+    {
+        "id": "R3",
+        "conditions": [
+            "G05",
+            "G08"
+        ],
+        "conclusion": "K03"
+    },
+    {
+        "id": "R4",
+        "conditions": [
+            "G06"
+        ],
+        "conclusion": "K04"
+    },
+    {
+        "id": "R5",
+        "conditions": [
+            "G01",
+            "G03"
+        ],
+        "conclusion": "K02"
+    },
+    {
+        "id": "R6",
+        "conditions": [
+            "G01",
+            "G02",
+            {
+                "not": "G04"
+            }
+        ],
+        "conclusion": "K06"
+    },
+    {
+        "id": "R7",
+        "conditions": [
+            "G07"
+        ],
+        "conclusion": "K01"
+    }
+]
