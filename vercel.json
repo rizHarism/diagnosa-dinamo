@@ -18,14 +18,33 @@
             "use": "@vercel/static"
         },
         {
-            "src": "page/*",
+            "src": "page/*.html",
             "use": "@vercel/static"
         }
     ],
     "routes": [
         {
+            "src": "/css/(.*)",
+            "dest": "/css/$1"
+        },
+        {
+            "src": "/js/(.*)",
+            "dest": "/js/$1"
+        },
+        {
+            "src": "/data/(.*)",
+            "dest": "/data/$1"
+        },
+        {
+            "src": "/page/(.*)",
+            "dest": "/page/$1"
+        },
+        {
             "src": "/(.*)",
-            "dest": "/index.html"
+            "dest": "/index.html",
+            "headers": {
+                "Content-Type": "text/html"
+            }
         }
     ]
 }
